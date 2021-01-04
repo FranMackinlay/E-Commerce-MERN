@@ -18,6 +18,7 @@ export default function HomeScreen() {
       setLoading(true);
 
       const products = await ProductSrv.getProducts();
+
       setProducts(products);
 
       setLoading(false);

@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Rating from '../components/Rating/Rating';
 import { Link } from 'react-router-dom';
-import data from '../../../backend/data'
+import ProductsSrv from '../services/ProductsSrv';
 
 export default function ProductScreen(props) {
+  let finalProduct;
+  const [product, setProducts] = useState([]);
 
-  const product = data.products.find(product => product._id === props.match.params.id);
+  const getProducts = async () => {
+    finalProduct = await ProductsSrv.getProducts();
+    finalProduct = finalProduct.find(product => product._id === props.match.params.id);
+
+    setProducts(finalProduct);
+  };
+
+
+  useEffect(() => {
+    getProducts();
+  }, []);
 
   if (!product) {
     return <div>Product not found!</div>
