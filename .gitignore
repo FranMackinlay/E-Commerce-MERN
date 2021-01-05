@@ -12,5 +12,5 @@
 .env.test.local
 .env.production.local
 package-lock.json
-package-lock.json
 .eslintcache
+frontend/.eslintcache
