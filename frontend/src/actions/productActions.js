@@ -9,7 +9,6 @@ export const listProducts = () => async (dispatch) => {
   try {
     const products = await ProductsSrv.getProducts();
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: products });
-
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
   }
