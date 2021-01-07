@@ -214,3 +214,20 @@ img.large {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
+
+/* Loading box */
+
+.loading-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+}
+
+.fa-spinner, .fa-spin {
+  position: absolute;
+  font-size: 8em;
+  animation: fa-spin 2.5s infinite ease-in-out;
+  opacity: .2;
+}
