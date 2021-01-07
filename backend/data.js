@@ -14,7 +14,7 @@ const data = {
 
     },
     {
-      _id: '1',
+      _id: '2',
       name: 'Adidas Slim Shirt',
       category: 'Shirts',
       image: '/images/p2.jpg',
@@ -27,7 +27,7 @@ const data = {
 
     },
     {
-      _id: '2',
+      _id: '3',
       name: 'Topper Slim Shirt',
       category: 'Shirts',
       image: '/images/p3.jpg',
@@ -40,7 +40,7 @@ const data = {
 
     },
     {
-      _id: '3',
+      _id: '4',
       name: 'Puma Slim Shirt',
       category: 'Shirts',
       image: '/images/p4.jpg',
@@ -53,7 +53,7 @@ const data = {
 
     },
     {
-      _id: '4',
+      _id: '5',
       name: 'Zara Slim Shirt',
       category: 'Shirts',
       image: '/images/p5.jpg',
