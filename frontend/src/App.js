@@ -22,7 +22,7 @@ function App() {
           </div>
           <div>
             <Link to="/cart">Cart</Link>
-            {cartItems.length && (
+            {!!cartItems.length && (
               <span className="badge">{cartItems.length}</span>
             )}
             <Link to="/sign-in">Sign In</Link>
