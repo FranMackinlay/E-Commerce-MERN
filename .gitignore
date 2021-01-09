@@ -16,3 +16,4 @@ package-lock.json
 frontend/.eslintcache
 .vscode
 backend/.env
+.env
