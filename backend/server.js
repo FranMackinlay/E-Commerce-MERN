@@ -23,6 +23,9 @@ app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
 
 app.use((error, req, res, next) => {
+  if (error.message.includes('duplicate')) {
+    error.message = 'Oh oh, there\'s an account with that email already!';
+  }
   res.status(500).send({ message: error.message });
 });
 
