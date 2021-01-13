@@ -24,7 +24,6 @@ export default function ShippingAddressScreen(props) {
 
   const submitHandler = e => {
     e?.preventDefault();
-    // TODO: DISPATCH SAVE SHIPPING ADDRESS
     dispatch(saveShippingAddress({fullName, address, city, postalCode, country}));
     props.history.push('/payment');
   }
