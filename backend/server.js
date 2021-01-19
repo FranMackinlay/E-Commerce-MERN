@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
+import orderRouter from './routers/orderRouter.js';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
 
 app.use((error, req, res, next) => {
   if (error.message.includes('duplicate')) {
