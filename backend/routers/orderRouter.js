@@ -5,7 +5,7 @@ import { isAuth } from '../utils.js';
 
 const orderRouter = express.Router();
 
-orderRouter.get('/', isAuth, expressAsyncHandler(async (req, res) => {
+orderRouter.post('/', isAuth, expressAsyncHandler(async (req, res) => {
   const orderItems = req?.body?.orderItems;
 
   if (!orderItems) return res.send(400).send({ message: 'Cart is empty' });
