@@ -247,6 +247,13 @@ img.large {
   background-color: #ffe0e0e0;
 }
 
+.alert-success {
+  color: #20a010;
+  background-color: #eeffe0;
+}
+
+
+
 /* Loading box */
 
 .loading-box {
