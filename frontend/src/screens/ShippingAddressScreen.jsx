@@ -18,8 +18,6 @@ export default function ShippingAddressScreen(props) {
   const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
   const [country, setCountry] = useState(shippingAddress.country);
 
-  console.log('shippingAddress', shippingAddress.fullName, shippingAddress.address, shippingAddress.city, shippingAddress.postalCode, shippingAddress.country);
-
   const dispatch = useDispatch();
 
   const submitHandler = e => {
