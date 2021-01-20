@@ -10,6 +10,17 @@ const OrdersSrv = {
     console.log('DATA', data);
     return data;
   },
+  getOrderDetails: async (orderId, userInfo) => {
+    const { data } = await axios.get(`/api/orders/${orderId}`, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`
+      }
+    });
+
+    return data;
+  },
+
+
 }
 
 export default OrdersSrv;
