@@ -7,7 +7,7 @@ const OrdersSrv = {
         Authorization: `Bearer ${userInfo.token}`
       }
     });
-    console.log('DATA', data);
+
     return data;
   },
   getOrderDetails: async (orderId, userInfo) => {
