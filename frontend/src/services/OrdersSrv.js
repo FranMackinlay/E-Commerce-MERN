@@ -19,8 +19,14 @@ const OrdersSrv = {
 
     return data;
   },
-
-
+  payOrder: async (order, paymentResult, userInfo) => {
+    const { data } = await axios.put(`/api/orders/${order._id}/pay`, paymentResult, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`
+      }
+    });
+    return data;
+  }
 }
 
 export default OrdersSrv;
