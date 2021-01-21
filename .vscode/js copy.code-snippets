@@ -1,0 +1,29 @@
+{
+	"Angular Component": {
+		"prefix": "_comp",
+		"body": [
+			"angular.module('core')",
+			".component('$1', {",
+				"bindings: {",
+				"},",
+				"templateUrl: '',",
+				"controller: ['\\$scope', '\\$rootScope', function(s, \\$r) {",
+				"// ---------------------METHODS---------------------",
+				"// ---------------------DATA---------------------",
+				"// ---------------------RUNTIME---------------------",
+				"}]",
+			"})",
+		],
+    "description": "AngularJs component boilerplate",
+    "scope": "javascript"
+	},
+	"Rootscope Sleep": {
+		"prefix": "$sleep",
+		"body": [
+			"await \\$r.\\$sleep($1)",
+			"$2",
+		],
+    "description": "AngularJs component boilerplate",
+    "scope": "javascript"
+	},
+}

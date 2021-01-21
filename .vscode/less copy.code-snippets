@@ -1,0 +1,64 @@
+{
+  "CH CORE": {
+    "prefix": "_ch-core",
+    "body": [
+      "@import (reference) 'modules/core/css/ch-core.less';"
+    ],
+    "description": "Imports ch-core importer",
+    "scope": "less"
+  },
+  "Import CH CORE": {
+    "prefix": "_core",
+    "body": [
+      ".ch-core();"
+    ],
+    "description": "Imports ch-core",
+    "scope": "less"
+  },
+  "Import Reference": {
+    "prefix": "refss",
+    "body": [
+      ".import-reference();"
+    ],
+    "description": "Imports reference file",
+    "scope": "less"
+  },
+  "Import Mixins": {
+    "prefix": "mixss",
+    "body": [
+      ".import-mixins();"
+    ],
+    "description": "Imports mixins file",
+    "scope": "less"
+  },
+  "Relative Font Size": {
+    "prefix": "_f",
+    "body": [
+      "~`fsize($1)`"
+    ],
+    "description": "font-size relative to base font-size",
+    "scope": "less"
+  },
+  "Mobile Query": {
+    "prefix": "mqq",
+    "body": [
+      "@media(@mobilequery) {$1}"
+    ],
+    "description": "Mobile Media Query",
+    "scope": "less"
+  },
+  "Col Media Query": {
+    "prefix": "cmq",
+    "body": [
+      "@media(@col-$1) {$2}"
+    ],
+    "scope": "less"
+  },
+  "var(--": {
+    "prefix": "v-",
+    "body": [
+      "var(--$1)"
+    ],
+    "description": "css var",
+  },
+}

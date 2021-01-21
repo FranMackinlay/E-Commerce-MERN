@@ -1,0 +1,25 @@
+{
+	"Import Reference": {
+		"prefix": "refss",
+		"body": [
+			"@import 'modules/core/css/reference.less';"
+		],
+		"description": "Imports reference file",
+		"scope": "less"
+	},
+	"Mobile Query": {
+		"prefix": "mqq",
+		"body": [
+			"@media(@mobilequery) {$1}"
+		],
+		"description": "Imports reference file",
+		"scope": "less"
+	},
+	"var(--": {
+		"prefix": "v-",
+		"body": [
+			"var(--$1)"
+		],
+		"description": "css var",
+	}
+}

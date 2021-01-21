@@ -1,0 +1,26 @@
+{
+	"New Modal": {
+		"prefix": "ch-modal",
+		"body": [
+			"<div class=\"modal fade\" id=\"ch-modal-$1\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">",
+      "  <div class=\"modal-dialog animated\" role=\"document\">",
+      "    <div class=\"modal-content\">",
+      "      <div class=\"modal-body\">",
+      "         $2",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+		],
+    "description": "new modal template",
+    "scope": "html"
+	},
+	"SVG Icon": {
+		"prefix": "svgicon",
+		"body": [
+			"<ch-svg-icon icon=\"$1\"></ch-svg-icon>"
+		],
+    "description": "ch-svg-icon",
+    "scope": "html"
+	}
+}

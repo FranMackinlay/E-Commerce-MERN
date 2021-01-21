@@ -1,0 +1,73 @@
+{
+  "New Promise": {
+    "prefix": "newProm",
+    "body": [
+      "new Promise((resolve, reject) => {$1})",
+    ],
+    "description": "New Promise Constructor"
+  },
+  "Define Object Property": {
+    "prefix": "defObjProp",
+    "body": [
+      "Object.defineProperty($1, $2, {$3})",
+    ],
+    "description": "Define Object Property"
+  },
+  "Console Log": {
+    "prefix": "clog",
+    "body": [
+      "console.log($1)",
+    ],
+    "description": "console.log"
+  },
+  "Console Log With string": {
+    "prefix": "_clg",
+    "body": [
+      "console.log(‘$1’, $1)",
+    ],
+    "description": "console.log"
+  },
+  "Console Time": {
+    "prefix": "ctm",
+    "body": [
+      "console.time(‘$1’)",
+      "console.timeEnd(‘$1’)",
+    ],
+    "description": "console.time"
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": [
+      "($1) => {$2}",
+    ],
+    "description": "Arrow Function"
+  },
+  "Async Arrow Function": {
+    "prefix": "aafn",
+    "body": [
+      "async ($1) => {$2}",
+    ],
+    "description": "Async Arrow Function"
+  },
+  "Throw Error": {
+    "prefix": "thwe",
+    "body": [
+      "throw err$1or",
+    ],
+    "description": "Throw Error"
+  },
+  "Controller Separator": {
+    "prefix": "_--",
+    "body": [
+      " // ---------------------$1---------------------"
+    ],
+    "description": "Controller METHODS/DATA/RUNTIME separator",
+  },
+  "Module Exports": {
+    "prefix": "modex",
+    "body": [
+      "module.exports = {$1}"
+    ],
+    "description": "module.exports",
+  }
+}
