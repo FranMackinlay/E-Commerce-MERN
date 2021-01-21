@@ -107,6 +107,10 @@ button.block {
   width: 100%;
 }
 
+button.small {
+  font-size: 1.2rem;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -311,7 +315,7 @@ img.large {
   transition: all 250ms ease-in-out;
   pointer-events: none;
   top: -1rem;
-  /* right: -20rem; */
+  width: max-content;
 }
 
 .dropdown:hover .dropdown-content {
@@ -338,8 +342,31 @@ img.large {
   padding: 1rem;
 }
 
-
 .checkout-steps > div.active {
   border-top-color: #f08000;
   color: #f08000;
+}
+
+/* Table */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+
+.table button {
+  margin: 0 auto;
+  display: flex;
 }
