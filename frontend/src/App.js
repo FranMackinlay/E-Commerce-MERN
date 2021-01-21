@@ -9,6 +9,7 @@ import OrderScreen from './screens/OrderScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import ProductScreen from './screens/ProductScreen';
+import ProfileScreen from './screens/ProfileScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import SignInScreen from './screens/SignInScreen';
@@ -42,7 +43,7 @@ function App() {
             {
               userInfo ? (
                 <div className="dropdown">
-                  <Link to="#">
+                  <Link to="/profile">
                     {userInfo.name} <i className="fa fa-caret-down"></i> {' '}
                   </Link>
                   <ul className="dropdown-content">
@@ -70,6 +71,7 @@ function App() {
           <Route path='/placeorder' component={PlaceOrderScreen}></Route>
           <Route path='/order/:id' component={OrderScreen}></Route>
           <Route path='/orderhistory' component={OrderHistoryScreen}></Route>
+          <Route path='/profile' component={ProfileScreen}></Route>
           <Route path='/' component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All right reserved</footer>
