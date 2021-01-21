@@ -9,13 +9,15 @@ const UsersSrv = {
   register: async (name, email, password) => {
     const res = await axios.post('/api/users/register', { name, email, password });
     return res;
+  },
+  getUserDetails: async userInfo => {
+    const { data } = await axios.get(`/api/users/${userInfo._id}`, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+      }
+    });
+    return data;
   }
 }
-// const signIn = async () => {
-//   const res = await UsersSrv.userSignIn('admin@amazona.com', '1234');
-//   console.log('RES', res);
-// }
-
-// signIn();
 
 export default UsersSrv;
