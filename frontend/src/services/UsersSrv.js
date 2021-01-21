@@ -17,7 +17,16 @@ const UsersSrv = {
       }
     });
     return data;
-  }
+  },
+
+  upsertUserDetails: async (user, userInfo) => {
+    const { data } = await axios.put(`/api/users/profile`, user, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+      }
+    });
+    return data;
+  },
 }
 
 export default UsersSrv;
