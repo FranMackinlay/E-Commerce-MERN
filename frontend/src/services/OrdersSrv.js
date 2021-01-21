@@ -26,6 +26,15 @@ const OrdersSrv = {
       }
     });
     return data;
+  },
+  getOrderHistory: async (userInfo) => {
+    const { data } = await axios.get(`/api/orders/history`, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`
+      }
+    });
+
+    return data;
   }
 }
 
